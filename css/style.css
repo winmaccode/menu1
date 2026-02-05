@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: rgb(12, 34, 85); */
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(12, 34, 85);
+}
+
+.hotel-nav{
+    font-family: "Great Vibes", cursive;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar{
+    background-color: rgb(12, 34, 85);
+    padding-top: 60px;
+    padding-bottom: 15px;
+    color: rgb(183, 149, 107);
+}
+
+.hotel-nav{
+    font-size: 125px;
+    text-align: center;
+    font-weight: 400;
+    padding-top: 120px;
+}
+
+.hotel-desc{
+    font-size: 40px;
+    text-align: center;
+    font-style: bold;
+    font-weight: 600;
+}
+
+.items{
+    background-color: rgb(12, 34, 85);
+    border-radius: 10px;
+    margin: 40px;
+}
+
+.itemslayout{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: rgb(252, 210, 141);
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 3.5px solid rgb(183, 149, 107);
+    overflow: hidden;
+}
+
+.itemsimg{
+    /* width: 300px; */
+    height: auto;
+    display: block;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.itemsimg1{
+    /* width: 300px; */
+    height: 220px;
+    display: block;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.itemnames{
+    font-size: 65px;
+    padding-bottom: 7px;
+    background-color: rgb(252, 210, 141);
+    color: rgb(64, 15, 15);
+}
+
+.itemdesc{
+    background-color: rgb(252, 210, 141);
+    color: rgb(64, 15, 15);
+    font-size: 40px;
+}
+
+.aboutitems{
+    margin-left: 20px;
+}
+
+@media (max-width: 768px)
+{
+    .itemslayout{
+        grid-template-columns: 1.2fr 3.8fr;
+        height: auto;
+    }
+
+    .itemsimg{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .itemsimg1{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .itemnames{
+        font-size: 18px;
+    }
+
+    .itemdesc{
+        font-size: 12px;
+        line-height: 1.1;
+    }
+
+    .hotel-nav{
+        font-size: 40px;
+    }
+
+    .hotel-desc{
+        font-size: 13px;
+    }
+
+    .navbar{
+        padding-bottom: 0px;
+        padding-top: 35px;
+    }
+}
+
+.footer{
+    color: white;
+    text-align: center;
+    background-color: rgb(12, 34, 85);
+    padding-bottom: 20px;
+    font-size: 25px;
+}
